@@ -27,6 +27,11 @@ func periSquare(a int) int {
 	return 4 * a
 
 }
+
+func periRectange(l, b int) int {
+	return 2 * (l + b)
+}
+
 func main() {
 	i := doubles(4) //integer double
 	fmt.Printf("Double the integer %d\n", i)
@@ -42,6 +47,9 @@ func main() {
 
 	fmt.Printf("Perimeter of %d, %T\n", i, i)
 	fmt.Printf("perimeter of %.2f", periCircle(10))
+
+	var pr int = periRectange(1, 1)
+	fmt.Println(pr)
 
 }
 
