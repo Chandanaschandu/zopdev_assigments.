@@ -27,6 +27,10 @@ func periSquare(a int) int {
 	return 4 * a
 
 }
+func cubeVolume(l, b, h int) int {
+	return l * b * h
+
+}
 
 func periRectange(l, b int) int {
 	return 2 * (l + b)
@@ -50,6 +54,9 @@ func main() {
 
 	var pr int = periRectange(1, 1)
 	fmt.Println(pr)
+
+	var cv int = cubeVolume(2, 3, 4)
+	fmt.Println(cv)
 
 }
 
