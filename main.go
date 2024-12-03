@@ -35,6 +35,7 @@ func cubeVolume(l, b, h int) int {
 func periRectange(l, b int) int {
 	return 2 * (l + b)
 }
+q
 func volumeSpher(ra float32) float32 {
 	const PI = 3.14
 	return 4 / 3 * (PI * ra * ra * ra)
