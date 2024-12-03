@@ -35,7 +35,11 @@ func cubeVolume(l, b, h int) int {
 func periRectange(l, b int) int {
 	return 2 * (l + b)
 }
+func volumeSpher(ra float32) float32 {
+	const PI = 3.14
+	return 4 / 3 * (PI * ra * ra * ra)
 
+}
 func main() {
 	i := doubles(4) //integer double
 	fmt.Printf("Double the integer %d\n", i)
@@ -57,6 +61,8 @@ func main() {
 
 	var cv int = cubeVolume(2, 3, 4)
 	fmt.Println(cv)
+	var res float32 = volumeSpher(4)
+	fmt.Println(res)
 
 }
 
